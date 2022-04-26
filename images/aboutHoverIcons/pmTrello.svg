@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="112mm"
+   height="126mm"
+   viewBox="0 0 112 126"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
+   sodipodi:docname="trello.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="451.42857"
+     inkscape:cy="497.14286"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="800"
+     inkscape:window-x="0"
+     inkscape:window-y="280"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#127bbd;stroke-width:4.5369;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect833"
+       width="104.54048"
+       height="115.87975"
+       x="4.048213"
+       y="4.8041601"
+       ry="18.059183" />
+    <rect
+       style="fill:none;stroke:#127bbd;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect833-2"
+       width="19.208227"
+       height="19.208227"
+       x="19.184574"
+       y="22.964355"
+       ry="2.99349" />
+    <rect
+       style="fill:none;stroke:#127bbd;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect833-2-6"
+       width="19.208227"
+       height="19.208227"
+       x="19.184574"
+       y="53.285072"
+       ry="2.99349" />
+    <rect
+       style="fill:none;stroke:#127bbd;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect833-2-5"
+       width="19.208227"
+       height="19.208227"
+       x="19.122078"
+       y="85.645889"
+       ry="2.99349" />
+    <path
+       style="fill:none;stroke:#127bbd;stroke-width:3.76577;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 46.869209,33.145224 46.035416,0.9902"
+       id="path897" />
+    <path
+       style="fill:none;stroke:#127bbd;stroke-width:3.08588;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 20.008829,20.75931 7.58153,13.996674 18.07903,-16.912645"
+       id="path899" />
+    <path
+       style="fill:none;stroke:#127bbd;stroke-width:3.08588;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.071033,50.473584 7.58153,13.99667 18.07903,-16.91264"
+       id="path899-2" />
+    <path
+       style="fill:none;stroke:#127bbd;stroke-width:3.76577;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 47.285863,62.163864 46.035412,0.9902"
+       id="path897-5" />
+    <path
+       style="fill:none;stroke:#127bbd;stroke-width:3.76577;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 45.773962,94.754904 46.035413,0.9902"
+       id="path897-5-5" />
+  </g>
+</svg>

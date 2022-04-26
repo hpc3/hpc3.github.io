@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+
+<!-- 
+
+  Asset Sources:
+
+  Shine Audio: https://www.myinstants.com/instant/ssbm-shine/
+
+  Video/Image Background: https://assets.melee.tv/
+
+  Stock Icons: https://www.ssbwiki.com/Category:Head_icons_(SSBM)
+
+  % Character Icons : https://www.reddit.com/r/smashbros/comments/3i0lyp/melee_hd_series_symbols/
+
+  If the asset is not credited and looks janky...i made it.
+
+  If you're wondering I'm a very medicore Falco main 
+
+ -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./images/navBarIcons/hpcShineLogo.png"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+    </style>
+
+    <title>Henry Casey Portfolio</title>
+  </head>
+  <body class="flex flex-col font-techMono bg-black">
+    <audio id="audio">
+      <source src="./sounds/shineSound.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="flex-col notShown overflow-x-hidden" id="mainBody">
+      <div id="static"></div>
+
+      <div class="video-container" id="video-container">
+        <video
+          autoplay
+          loop
+          muted
+          src="./video/meleeMenuVideo.mp4"
+          id="meleeBackground"
+        ></video>
+      </div>
+      <header
+        id="navBar"
+        class="fixed h-15v w-full pt-2 pb-2 bg-black bg-opacity-50 z-20 h-10v"
+      >
+        <!-- nav -->
+        <nav
+          class="
+            flex flex-row
+            w-11/12
+            h-full
+            m-auto
+            justify-between
+            max-w-screen-lg
+          "
+        >
+          <div
+            id="audio-button"
+            class="
+              cursor-pointer
+              h-full
+              shine-image
+              focus:outline-none
+              focus:border-green-900
+              unselectable
+              flex
+              items-center
+            "
+          >
+            <img
+              class="h-full focus:outline-none"
+              src="./images/navBarIcons/hpcShineLogo.png"
+              alt="Henry Plante Casey Logo"
+              class="navLogo"
+            />
+          </div>
+
+          <div
+            class="flex-row sm:w-2/3 md:w-1/2 justify-between sm:flex hidden"
+          >
+            <div
+              class="
+                flex flex-row
+                items-center
+                flex-1
+                justify-evenly
+                text-blue-300
+                hover:pb-2
+                hover:text-red-600
+                cursor-pointer
+                smoothScroll
+              "
+            >
+              <a href="#about" style="all: inherit" class="">
+                <img
+                  src="./images/navBarIcons/falcoStockIcon.png"
+                  alt="About Section Link"
+                  class="navLinkIcon"
+                />
+                About
+              </a>
+            </div>
+
+            <div
+              class="
+                flex flex-row
+                items-center
+                flex-1
+                justify-evenly
+                text-blue-300
+                hover:pb-2
+                hover:text-red-600
+                cursor-pointer
+                smoothScroll
+              "
+              href="#projects"
+            >
+              <a href="#projects" style="all: inherit" class="">
+                <img
+                  src="./images/navBarIcons/foxStockIcon.png"
+                  alt="Project Section Link"
+                  class="navLinkIcon"
+                />
+                Projects
+              </a>
+            </div>
+            <div
+              class="
+                flex flex-row
+                items-center
+                flex-1
+                justify-evenly
+                text-blue-300
+                hover:pb-2
+                hover:text-red-600
+                cursor-pointer
+                smoothScroll
+              "
+              href="#contact"
+            >
+              <a href="#contact" style="all: inherit">
+                <img
+                  src="./images/navBarIcons/stompKneeStockIcon.png"
+                  alt="Contact Section Link"
+                  class="navLinkIcon"
+                />
+                Contact</a
+              >
+            </div>
+
+            <div
+              class="
+                flex flex-row
+                items-center
+                flex-1
+                justify-evenly
+                text-blue-300
+                hover:text-red-600
+                cursor-pointer
+                smoothScroll
+                border
+                rounded-lg
+                h-8
+                self-center
+                border-blue-300
+                hover:border-red-600
+              "
+            >
+              <a href="henryCaseyResume.pdf" target="_blank">Resume</a>
+            </div>
+          </div>
+          <div
+            class="sm:hidden flex items-center pr-5"
+            id="mobileNavOpenButton"
+          >
+            <img
+              class="h-4/6 w-14"
+              alt="Open Mobile Nav"
+              src="./images/navBarIcons/laserHamburger.png"
+            />
+          </div>
+        </nav>
+        <!-- ./nav -->
+      </header>
+
+      <!-- ./Header -->
+
+      <!-- Mobile  Nav -->
+      <div id="mobileNav" class="mobileNav">
+        <div class="h-1/2 flex flex-col justify-between items-center w-full">
+          <div
+            class="
+              h-10v
+              flex
+              items-center
+              justify-center
+              text-3xl text-white
+              w-full
+            "
+            style="background: rgba(59, 130, 246, 1)"
+          >
+            <h2>Henry Casey</h2>
+          </div>
+
+          <div
+            class="
+              flex flex-row
+              items-center
+              justify-evenly
+              w-full
+              text-blue-300
+            "
+            style="padding: 5px 10px"
+          >
+            <a href="#about" style="all: inherit">
+              <div class="flex-1 flex justify-start">
+                <img
+                  src="./images/navBarIcons/falcoStockIcon.png"
+                  alt="About Section Link"
+                  class="navLinkIcon"
+                />
+              </div>
+              <div class="flex-2 flex justify-start">
+                <p class="text-2xl">About</p>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="
+              flex flex-row
+              items-center
+              justify-evenly
+              w-full
+              text-blue-300
+            "
+            style="padding: 5px 10px"
+          >
+            <a href="#projects" style="all: inherit">
+              <div class="flex-1 flex justify-start">
+                <img
+                  src="./images/navBarIcons/foxStockIcon.png"
+                  alt="Projects Section Link"
+                  class="navLinkIcon"
+                />
+              </div>
+              <div class="flex-2">
+                <p class="text-2xl">Projects</p>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="
+              flex flex-row
+              items-center
+              justify-evenly
+              w-full
+              text-blue-300
+            "
+            style="padding: 5px 10px"
+          >
+            <a href="#contact" style="all: inherit">
+              <div class="flex-1 flex justify-start">
+                <img
+                  src="./images/navBarIcons/stompKneeStockIcon.png"
+                  alt="Contact Section Link"
+                  class="navLinkIcon"
+                />
+              </div>
+              <div class="flex-2">
+                <p class="text-2xl">Contact</p>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="
+              flex flex-row
+              items-center
+              p-2
+              justify-evenly
+              text-blue-300
+              cursor-pointer
+              smoothScroll
+              border
+              rounded-lg
+              self-end
+              mr-5
+              border-blue-300
+            "
+          >
+            <a href="resume.pdf" target="_blank">Resume</a>
+          </div>
+
+          <!-- <a href="" id="mobileNavClose">Close Nav</a> -->
+
+          <div
+            class="
+              flex flex-row
+              items-center
+              justify-evenly
+              w-full
+              text-blue-300
+            "
+            style="padding: 10px 20px"
+            id="mobileNavClose"
+          >
+            <div class="flex-1 flex justify-start">
+              <img
+                src="./images/navBarIcons/closeNavIcon.png"
+                alt="Close Nav"
+                class="navLinkIcon"
+                style="height: 24px"
+              />
+            </div>
+            <div class="flex-2">
+              <p class="text-2xl text-red-600">Close Nav</p>
+            </div>
+          </div>
+
+          <!-- <button id="mobileNavClose" class="text-red-600">Close Nav</button> -->
+        </div>
+      </div>
+
+      <div
+        class="
+          flex
+          sm:w-11/12
+          w-10/12
+          pt-14
+          h-80v
+          sm:h-100v
+          justify-center
+          self-center
+          max-w-screen-lg
+          sm:flex-row
+          flex-col-reverse
+          mb-5
+          md:mb-0
+        "
+        style="padding-top: calc(10vh + 3em)"
+      >
+        <div
+          class="flex sm:flex-1 flex-col items-start self-center justify-start"
+        >
+          <p class="text-white italic sm:text-3xl text-4xl">
+            <span class="text-blue-300 text-6xl sm:text-6xl">Hey</span> I'm
+            Henry!
+          </p>
+          <p class="text-white sm:text-2xl text-3xl">
+            I'm a
+            <span class="text-red-500"> Full Stack Web Developer </span> and
+            recent graduate from
+            <span class="text-blue-300">New Jersey Institute of Technology</span
+            >. I enjoy building
+            <span class="text-green-500">highly responsive</span>,
+            <span class="text-green-500">elegant</span>, and
+            <span class="text-green-500">user focused</span> web apps and
+            websites.
+          </p>
+        </div>
+        <div
+          class="
+            flex
+            sm:flex-1
+            sm:justify-center
+            sm:items-center
+            self-center
+            w-full
+            pb-6
+            sm:pb-0
+          "
+        >
+          <img
+            class="sm:h-5/6 max-h-80 h-28"
+            src="./images/avataaars.svg"
+            alt="Henry Icon"
+          />
+        </div>
+      </div>
+
+      <div
+        class="
+          h-100v
+          w-full
+          sm:flex
+          flex-col
+          hidden
+          items-center
+          justify-evenly
+        "
+        id="about"
+      >
+        <div class="flex w-11/12 md:w-1/2 items-center pt-10 pb-10">
+          <h1 class="text-5xl text-red-600 flex-1">About</h1>
+          <hr
+            class="flex-2 w-full"
+            style="border: 1px solid rgba(220, 38, 38); border-radius: 80%"
+          />
+        </div>
+        <div
+          class="w-7/12 justify-center flex flex-wrap"
+          style="height: fit-content; max-width: 600px; width: 600px"
+        >
+          <div class="tooltip">
+            <img
+              src="./images/aboutStockIcons/meleeIconsJS.png"
+              alt="Javascript Icon"
+              class="cursor-pointer h-36"
+            />
+            <span class="tooltip-span">
+              <span class="text-yellow-200"> &lt;/&gt; </span>Language</span
+            >
+          </div>
+
+          <div class="tooltip">
+            <img
+              src="./images/aboutStockIcons/meleeIconsHTML.png"
+              alt="HTML Icon"
+              class="cursor-pointer h-36"
+            />
+            <span class="tooltip-span"
+              ><span class="text-red-400"> &lt;/&gt; </span>Language</span
+            >
+          </div>
+
+          <div class="tooltip">
+            <img
+              src="./images/aboutStockIcons/meleeIconsCSS.png"
+              alt="CSS Icon"
+              class="cursor-pointer h-36"
+            />
+            <span class="tooltip-span">
+              <span class="text-blue-400"> &lt;/&gt;</span> Language
+            </span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              src="./images/aboutStockIcons/meleeIconsReact.png"
+              alt="React/React Native Icon"
+              class="cursor-pointer h-36 inline"
+            />
+            <span class="tooltip-span"
+              ><img
+                src="./images/aboutHoverIcons/gearReact.svg"
+                alt="Frontend Framework Tooltip"
+                style="height: 20px; display: inline"
+              />
+              Frontend Framework
+            </span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              src="./images/aboutStockIcons/meleeIconsTailwind.png"
+              alt="Tailwind CSS Icon"
+              class="cursor-pointer h-36 inline"
+            />
+            <span class="tooltip-span"
+              ><img
+                src="./images/aboutHoverIcons/gearTailwind.svg"
+                alt="Styling Library/Tool Tooltip"
+                style="height: 20px; display: inline"
+              />
+              Styling Library/Tool
+            </span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              src="./images/aboutStockIcons/meleeIconsStyledComponents.png"
+              alt="Tailwind CSS Icon"
+              class="cursor-pointer h-36 inline"
+            />
+            <span class="tooltip-span"
+              ><img
+                src="./images/aboutHoverIcons/gearStyled.svg"
+                alt="Styling Library/Tool Tooltip"
+                style="height: 20px; display: inline"
+              />
+              Styling Library/Tool
+            </span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              src="./images/aboutStockIcons/meleeIconsExpress.png"
+              alt="Express.js Icon"
+              class="cursor-pointer h-36 inline"
+              id="tempId"
+            />
+            <span class="tooltip-span">
+              <img
+                src="./images/aboutHoverIcons/gearExpress.svg"
+                alt="Backend Framework Tooltip"
+                style="height: 20px; display: inline"
+              />
+              Backend Framework
+            </span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              src="./images/aboutStockIcons/meleeIconsMongoDB.png"
+              alt="MongoDB Icon"
+              class="cursor-pointer h-36 inline"
+            />
+            <span class="tooltip-span"
+              ><img
+                src="./images/aboutHoverIcons/dbMongo.svg"
+                alt="nosql Database Tooltip"
+                style="height: 20px; display: inline"
+              />
+              nosql Database
+            </span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              src="./images/aboutStockIcons/meleeIconsNode.png"
+              alt="Node.js Icon"
+              class="cursor-pointer h-36 inline"
+            />
+            <span class="tooltip-span"
+              ><img
+                src="./images/aboutHoverIcons/clockNode.svg"
+                alt="Runtime Environment"
+                style="height: 25px; display: inline"
+              />
+              Runtime Environment
+            </span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              src="./images/aboutStockIcons/meleeIconsGIT.png"
+              alt="Git Icon"
+              class="cursor-pointer h-36"
+            />
+            <span class="tooltip-span"
+              ><img
+                src="./images/aboutHoverIcons/sourceControl.svg"
+                alt="Source Control Tooltip"
+                style="height: 25px; display: inline"
+              />
+              Source Control
+            </span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              src="./images/aboutStockIcons/meleeIconsTrello.png"
+              alt="Trello Icon"
+              class="cursor-pointer h-36"
+            />
+            <span class="tooltip-span"
+              ><img
+                src="./images/aboutHoverIcons/pmTrello.svg"
+                alt="Project Managment Tooltip"
+                style="height: 25px; display: inline"
+              />
+              Project Managment
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex sm:hidden flex-col" id="about">
+        <div class="flex flex-col items-center max-w-screen-xl">
+          <div class="flex w-11/12 md:w-1/2 items-center pt-10 pb-10">
+            <h1 class="text-5xl text-red-600 flex-1">About</h1>
+            <hr
+              class="flex-2 w-full"
+              style="border: 1px solid rgba(220, 38, 38); border-radius: 80%"
+            />
+          </div>
+
+          <div class="flex flex-col items-center w-11/12">
+            <h1 class="text-blue-400 text-3xl italic pb-3">Languages</h1>
+
+            <div class="flex flex-row flex-wrap justify-center md:flex-row">
+              <img
+                src="./images/aboutStockIcons/meleeIconsJS.png"
+                alt="Javascript Icon"
+                class="cursor-pointer h-36"
+              />
+              <img
+                src="./images/aboutStockIcons/meleeIconsHTML.png"
+                alt="HTML Icon"
+                class="cursor-pointer h-36"
+              />
+
+              <img
+                src="./images/aboutStockIcons/meleeIconsCSS.png"
+                alt="CSS Icon"
+                class="cursor-pointer h-36"
+              />
+            </div>
+          </div>
+
+          <h1 class="text-blue-400 text-3xl italic pb-3 pt-3">
+            Frameworks/Tools
+          </h1>
+          <div
+            class="
+              flex flex-row flex-wrap
+              md:flex-row
+              items-center
+              pb-10
+              md:w-5/6
+              w-11/12
+              justify-center
+              sm:justify-evenly
+            "
+          >
+            <h1 class="text-green-500 text-2xl md:text-right">Frontend:</h1>
+            <div class="flex flex-row flex-wrap justify-center">
+              <img
+                src="./images/aboutStockIcons/meleeIconsReact.png"
+                alt="React/React Native Icon"
+                class="cursor-pointer h-36"
+              />
+
+              <img
+                src="./images/aboutStockIcons/meleeIconsTailwind.png"
+                alt="Tailwind CSS Icon"
+                class="cursor-pointer h-36"
+              />
+
+              <img
+                src="./images/aboutStockIcons/meleeIconsStyledComponents.png"
+                alt="Tailwind CSS Icon"
+                class="cursor-pointer h-36"
+              />
+              <!-- <div class="flex-1"></div> -->
+              <!-- <div class="flex-1"></div> -->
+            </div>
+          </div>
+
+          <div
+            class="
+              flex flex-row flex-wrap
+              md:flex-row
+              items-center
+              pb-10
+              md:w-5/6
+              w-11/12
+              justify-center
+              sm:justify-evenly
+            "
+          >
+            <h1 class="text-green-500 text-2xl md:text-right">Backend:</h1>
+            <div class="flex flex-row flex-wrap justify-center">
+              <img
+                src="./images/aboutStockIcons/meleeIconsExpress.png"
+                alt="Express.js Icon"
+                class="cursor-pointer h-36"
+              />
+
+              <img
+                src="./images/aboutStockIcons/meleeIconsNode.png"
+                alt="Node.js Icon"
+                class="cursor-pointer h-36"
+              />
+              <img
+                src="./images/aboutStockIcons/meleeIconsMongoDB.png"
+                alt="MongoDB Icon"
+                class="cursor-pointer h-36"
+              />
+            </div>
+          </div>
+
+          <div
+            class="
+              flex flex-row
+              md:flex-row
+              sm:w-2/3
+              max-w-screen-lg
+              items-end
+              justify-between
+              pb-10
+            "
+          >
+            <div class="flex flex-col sm:flex-row items-center flex-1">
+              <h1 class="text-green-500 text-2xl text-center">
+                Source Control:
+              </h1>
+              <img
+                src="./images/aboutStockIcons/meleeIconsGIT.png"
+                alt="Git Icon"
+                class="cursor-pointer h-36"
+              />
+            </div>
+            <div class="flex flex-col sm:flex-row items-center flex-1">
+              <h1 class="text-green-500 text-2xl">PM:</h1>
+              <img
+                src="./images/aboutStockIcons/meleeIconsTrello.png"
+                alt="Trello Icon"
+                class="cursor-pointer h-36"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center self-center w-full max-w-screen-lg"
+        id="projects"
+      >
+        <!-- projectHeading -->
+        <div class="flex w-11/12 md:w-1/2 items-center pt-10 pb-10">
+          <h1 class="text-5xl text-red-600 flex-1">Projects</h1>
+          <hr
+            class="flex-2 w-full"
+            style="border: 1px solid rgba(220, 38, 38); border-radius: 80%"
+          />
+        </div>
+        <!-- ./projectHeading -->
+        <!-- projectSelector -->
+        <div
+          class="
+            flex
+            sm:w-2/3
+            w-11/12
+            text-white
+            justify-between
+            text-base
+            items-end
+            sm:items-center
+            mb-1
+          "
+        >
+          <div
+            class="
+              flex
+              sm:flex-row
+              flex-col-reverse
+              items-center
+              flex-1
+              justify-evenly
+              projectButton
+              cursor-pointer
+            "
+            id="for-writers"
+            data-projectValue="for-writers"
+          >
+            <img
+              src="images/projectIcons/forWritersNonActive.png"
+              alt="For Writers Button"
+              class="h-8 sm:h-12"
+            />
+            <h3 class="text-center sm:text-left">For Writers</h3>
+          </div>
+          <div
+            class="
+              flex
+              sm:flex-row
+              flex-col-reverse
+              items-center
+              flex-1
+              justify-evenly
+              projectButton
+              cursor-pointer
+            "
+            id="the-stand"
+            data-projectValue="the-stand"
+          >
+            <img
+              src="./images/projectIcons/theStandActive.png"
+              alt="The-Stand Button"
+              class="h-8 sm:h-12"
+            />
+            <h3 class="text-center sm:text-left">the-stand</h3>
+          </div>
+          <div
+            class="
+              flex
+              sm:flex-row
+              flex-col-reverse
+              items-center
+              flex-1
+              justify-evenly
+              projectButton
+              cursor-pointer
+            "
+            id="hopwa"
+            data-projectValue="hopwa"
+          >
+            <img
+              src="images/projectIcons/hopwaNonActive.png"
+              alt="HOPWA Calculator Button"
+              class="h-8 sm:h-12"
+            />
+            <h3 class="text-center sm:text-left">HOPWA Calculator</h3>
+          </div>
+        </div>
+        <!-- ./projectSelector -->
+        <!-- hoverBar -->
+        <div class="flex sm:w-2/3 w-11/12 mt-2" style="height: 10px">
+          <div class="flex-0 highlightBar" id="farLeft"></div>
+          <div class="flex-1 highlightBar" id="middleLeft"></div>
+          <div class="flex-1 highlightBar" id="middle">
+            <hr style="border: 2px solid white" class="m-auto" id="highlight" />
+          </div>
+
+          <div class="flex-1 highlightBar" id="middleRight"></div>
+          <div class="flex-0 highlightBar" id="farRight"></div>
+        </div>
+        <!-- ./hoverBar -->
+
+        <!-- the-stand -->
+        <div
+          class="w-11/12 text-white flex-col sm:h-100v"
+          style="height: fit-content"
+          id="the-stand-container"
+        >
+          <h1 class="text-blue-500 self-center text-2xl mt-2 mb-2">
+            <span class="text-white">></span>the-stand
+          </h1>
+          <p class="self-center pb-2">
+            A full stack web app that serves as a public site for customers and
+            management tool for employee's. React handles rendering out UI.
+            Redux handles state management. A REST API built with Express.js
+            handles communication between the frontend and mongoDB database.
+          </p>
+
+          <h2 class="text-red-500 text-center text-xl mt-2 mb-2">
+            <span class="text-white">></span>Tools
+          </h2>
+
+          <div class="flex pb-2">
+            <div class="flex flex-col flex-1">
+              <h3 class="text-blue-500 self-center text-lg">
+                <span class="text-white">></span>Frontend
+              </h3>
+              <ul class="text-center">
+                <li>- React</li>
+                <li>- Redux</li>
+                <li>- styled-components</li>
+                <li>- Chart.js</li>
+              </ul>
+            </div>
+            <div class="flex flex-col flex-1">
+              <h3 class="text-blue-500 self-center text-lg">
+                <span class="text-white">></span>Backend
+              </h3>
+              <ul class="text-center">
+                <li>- Node.js</li>
+                <li>- Express.js</li>
+                <li>- MongoDB</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-red-500 self-center text-xl mt-2 mb-2">
+            <span class="text-white">></span>Features
+          </h2>
+
+          <h2 class="text-blue-500 text-lg">
+            <span class="text-white">></span>Customers
+          </h2>
+          <ul>
+            <li>- View details about the produce stand</li>
+            <li>- View products and a live inventory count</li>
+            <li>- Leaves comments for produce stand employees</li>
+          </ul>
+
+          <h2 class="text-blue-500 text-lg">
+            <span class="text-white">></span>Employees
+          </h2>
+          <ul>
+            <li>- Login/Authentications</li>
+            <li>
+              - Edit Produce Items [adjust stock quantity, name, price etc.]
+            </li>
+            <li>- View and response to comments left by customers</li>
+            <li>- Submits and track sales/expenses</li>
+            <li>
+              - View and alter charts related to submitted financial information
+            </li>
+          </ul>
+          <h2 class="text-red-500 self-center text-xl mt-2 mb-5">
+            <span class="text-white">></span>Links
+          </h2>
+
+          <div class="w-full flex justify-evenly">
+            <a
+              href="https://github.com/hpc3/the-stand"
+              target="_blank"
+              class="flex flex-col items-center"
+            >
+              <img
+                src="./images/contactIcons/githubIconWhite.png"
+                alt="Github Link"
+                style="height: 50px"
+              />Github</a
+            >
+
+            <a
+              href="http://www.thekidsproducestand.com/"
+              target="_blank"
+              class="flex flex-col items-center"
+            >
+              <img
+                src="./images/projectIcons/liveIcon.png"
+                alt="Live Site Link"
+                style="height: 50px"
+              />Live</a
+            >
+
+            <a
+              href="https://www.youtube.com/watch?v=URCVHpywEGI"
+              target="_blank"
+              class="flex flex-col items-center"
+            >
+              <img
+                src="./images/projectIcons/demoIcon.png"
+                alt="Demo Video Link"
+                style="height: 50px"
+              />Demo</a
+            >
+          </div>
+        </div>
+        <!-- ./the-stand -->
+
+        <!-- for-writers -->
+
+        <div
+          class="w-11/12 text-white hidden flex-col sm:h-100v"
+          style="height: fit-content"
+          id="for-writers-container"
+        >
+          <h1 class="text-green-500 self-center text-2xl mt-2 mb-2">
+            <span class="text-white"> > </span>For Writers
+          </h1>
+          <p class="self-center pb-2">
+            A IOS/Android app built with React Native that puts a collaborative
+            focus on writing.
+          </p>
+
+          <h2 class="text-red-500 text-center text-xl mt-2 mb-2">
+            <span class="text-white">></span>Tools
+          </h2>
+
+          <div class="flex pb-2">
+            <div class="flex flex-col flex-1">
+              <h3 class="text-blue-500 self-center text-lg">
+                <span class="text-white">></span>Frontend
+              </h3>
+              <ul class="text-center">
+                <li>- React Native</li>
+              </ul>
+            </div>
+            <div class="flex flex-col flex-1">
+              <h3 class="text-blue-500 self-center text-lg">
+                <span class="text-white">></span>Backend
+              </h3>
+              <ul class="text-center">
+                <li>- Firebase</li>
+                <li>- Firebase Realtime Database</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-red-500 self-center text-xl mt-2 mb-2">
+            <span class="text-white">></span>Features
+          </h2>
+
+          <h2 class="text-blue-500 text-lg">
+            <span class="text-white">></span>Writers
+          </h2>
+          <ul>
+            <li>- Create, store, and move notes in a folder system</li>
+            <li>- Format the spacing and font of note content</li>
+            <li>- Share and collaborate on notes with other writers</li>
+            <li>- Messaging</li>
+            <li>- Ability to follow other users</li>
+            <li>
+              - Reminders for writers to keep up with goals and increase user
+              retention
+            </li>
+            <li>
+              - Notifications for when users are followed or recieve a message
+            </li>
+          </ul>
+          <h2 class="text-red-500 self-center text-xl mt-2 mb-5">
+            <span class="text-white">></span>Links
+          </h2>
+
+          <div class="w-full flex justify-evenly">
+            <a
+              href="https://apps.apple.com/sg/app/for-writers/id1546794394#?platform=iphone"
+              target="_blank"
+              class="flex flex-col items-center"
+            >
+              <img
+                src="./images/projectIcons/liveIcon.png"
+                alt="Live Site Link"
+                style="height: 50px"
+              />Live</a
+            >
+          </div>
+        </div>
+        <!-- ./for-writers -->
+
+        <!-- hopwa -->
+
+        <div
+          class="w-11/12 text-white hidden flex-col sm:h-100v"
+          style="height: fit-content"
+          id="hopwa-container"
+        >
+          <h1 class="text-red-500 self-center text-2xl text-center mt-2 mb-2">
+            <span class="text-white">></span>HOPWA Rent Calculator
+          </h1>
+          <p class="self-center pb-2">
+            A full stack web app built for RDE Systems in conjunction with New
+            Jersey Institute of Technology Capstone Program. It serves as a tool
+            to assist caseworks in calculating benefits received by clients
+            affiliated with the Housing Opportunities for Persons with AIDS
+            (HOPWA) program.
+          </p>
+
+          <h2 class="text-red-500 text-center text-xl mt-2 mb-2">
+            <span class="text-white">></span>Tools
+          </h2>
+
+          <div class="flex pb-2">
+            <div class="flex flex-col flex-1">
+              <h3 class="text-blue-500 self-center text-lg">
+                <span class="text-white">></span>Frontend
+              </h3>
+              <ul class="text-center">
+                <li>- React</li>
+              </ul>
+            </div>
+            <div class="flex flex-col flex-1">
+              <h3 class="text-blue-500 self-center text-lg">
+                <span class="text-white">></span>Backend
+              </h3>
+              <ul class="text-center">
+                <li>- MSSQL</li>
+                <li>- Coldfusion</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-red-500 self-center text-xl mt-2 mb-2">
+            <span class="text-white">></span>Features
+          </h2>
+
+          <h2 class="text-blue-500 text-lg">
+            <span class="text-white">></span>Caseworkers
+          </h2>
+          <ul>
+            <li>- Add/Search clients</li>
+            <li>- View client information</li>
+            <li>
+              - Collect data to create worksheets based on client data [i.e.
+              income, expenses]
+            </li>
+            <li>- Calculate benefits based on collected data</li>
+            <li>- View past worksheets</li>
+          </ul>
+          <h2 class="text-red-500 self-center text-xl mt-2 mb-5">
+            <span class="text-white">></span>Links
+          </h2>
+
+          <div class="w-full flex justify-evenly">
+            <a
+              href="https://github.com/JoshAlm/Housing-Rent-Calculator"
+              target="_blank"
+              class="flex flex-col items-center"
+            >
+              <img
+                src="./images/contactIcons/githubIconWhite.png"
+                alt="Github Link"
+                style="height: 50px"
+              />Github</a
+            >
+          </div>
+        </div>
+
+        <!-- ./hopwa -->
+      </div>
+
+      <!-- Contact -->
+      <div
+        class="
+          h-24
+          mt-8
+          flex
+          justify-center
+          items-center
+          bg-black
+          shadow-headerShadow
+        "
+        id="contact"
+      >
+        <div
+          class="
+            flex flex-col-reverse
+            sm:flex-row
+            items-center
+            w-10/12
+            justify-between
+          "
+        >
+          <div class="flex-1"></div>
+
+          <div class="flex-1 text-center text-blue-300">
+            <h2>&copy; 2021 Henry Casey</h2>
+          </div>
+
+          <div class="flex flex-1 justify-end">
+            <div
+              class="
+                border-transparent
+                hover:border-blue-300
+                border-2
+                rounded-full
+                p-1
+                mr-3
+              "
+            >
+              <a href="https://www.github.com/hpc3" target="_blank">
+                <img
+                  src="./images/contactIcons/githubIconWhite.png"
+                  alt="Github Link"
+                  class="h-8 hover:border-white"
+                />
+              </a>
+            </div>
+            <div
+              class="
+                border-transparent
+                hover:border-blue-300
+                border-2
+                rounded-full
+                p-1
+                mr-3
+              "
+            >
+              <a
+                href="https://www.linkedin.com/in/henry-casey-37b316193/"
+                target="_blank"
+              >
+                <img
+                  src="./images/contactIcons/linkedinIcon.png"
+                  alt="LinkedIn Link"
+                  class="h-8 hover:border-white"
+                />
+              </a>
+            </div>
+            <div
+              class="
+                border-transparent
+                hover:border-blue-300
+                border-2
+                rounded-lg
+                p-1
+              "
+            >
+              <a href="mailto:henry.casey88@gmail.com" target="_blank">
+                <img
+                  src="./images/contactIcons/emailIcon.png"
+                  alt="Email Link"
+                  class="h-8 hover:border-white"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ./actualyPage  -->
+    </div>
+
+    <!-- Loading Animation -->
+
+    <div
+      class="h-full w-full flex flex-col items-center justify-center"
+      style="height: 100vh; width: 100vw; overflow: hidden"
+      id="loadingPage"
+    >
+      <svg
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+        width="25vh"
+        height="25vh"
+        viewBox="0 0 144.55952 165.08537"
+        version="1.1"
+        id="shineSVG"
+        inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
+        sodipodi:docname="newTestyShine.svg"
+      >
+        <defs id="defs983">
+          <linearGradient inkscape:collect="always" id="shine">
+            <stop
+              style="stop-color: #008afc; stop-opacity: 1"
+              offset="0"
+              id="stop868"
+            />
+            <stop
+              style="stop-color: #ffffff; stop-opacity: 1"
+              offset="1"
+              id="stop870"
+            />
+          </linearGradient>
+          <linearGradient
+            inkscape:collect="always"
+            xlink:href="#shine"
+            id="linearGradient876"
+            gradientUnits="userSpaceOnUse"
+            x1="271.3869"
+            y1="235.10118"
+            x2="-5.2916737"
+            y2="77.10714"
+            gradientTransform="translate(-32.505952,-58.964286)"
+          />
+        </defs>
+        <sodipodi:namedview
+          id="base"
+          pagecolor="#ffffff"
+          bordercolor="#666666"
+          borderopacity="1.0"
+          inkscape:pageopacity="0.0"
+          inkscape:pageshadow="2"
+          inkscape:zoom="0.35"
+          inkscape:cx="33.183362"
+          inkscape:cy="551.97238"
+          inkscape:document-units="mm"
+          inkscape:current-layer="layer1"
+          inkscape:document-rotation="0"
+          showgrid="false"
+          inkscape:window-width="1252"
+          inkscape:window-height="678"
+          inkscape:window-x="12"
+          inkscape:window-y="25"
+          inkscape:window-maximized="0"
+          fit-margin-top="0"
+          fit-margin-left="0"
+          fit-margin-right="0"
+          fit-margin-bottom="0"
+        />
+        <metadata id="metadata986">
+          <rdf:RDF>
+            <cc:Work rdf:about="">
+              <dc:format>image/svg+xml</dc:format>
+              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+              <dc:title></dc:title>
+            </cc:Work>
+          </rdf:RDF>
+        </metadata>
+        <g
+          inkscape:label="Layer 1"
+          inkscape:groupmode="layer"
+          id="layer1"
+          transform="translate(-1.8035687,-2.1239746)"
+        >
+          <path
+            id="testPath"
+            class="loadingAnimation"
+            sodipodi:type="star"
+            style="
+              fill: none;
+              stroke: url(#linearGradient876);
+              stroke-width: 5;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 4;
+              stroke-opacity: 1;
+              paint-order: stroke markers fill;
+            "
+            sodipodi:sides="6"
+            sodipodi:cx="74.083328"
+            sodipodi:cy="84.666664"
+            sodipodi:r1="77.543175"
+            sodipodi:r2="67.154366"
+            sodipodi:arg1="0.5203553"
+            sodipodi:arg2="1.0439541"
+            inkscape:flatsided="true"
+            inkscape:rounded="0"
+            inkscape:randomized="0"
+            d="M 141.36309,123.22023 74.334837,162.20943 7.0550767,123.65586 6.8035678,46.113094 73.831819,7.1238973 141.11158,45.677468 Z"
+            inkscape:transform-center-x="1.3428571e-06"
+          />
+        </g>
+      </svg>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const checkPageLoad = () => {
+        if (document.readyState === "complete") {
+          clearInterval(animationInterval);
+          document
+            .getElementById("testPath")
+            .classList.remove("loadingAnimation");
+          document.getElementById("shineSVG").classList.add("popThing");
+
+          setTimeout(() => {
+            document.getElementById("testPath").style.opacity = 0;
+            document.getElementById("loadingPage").style.opacity = 0;
+            setTimeout(() => {
+              document.getElementById("loadingPage").style.display = "none";
+              document.getElementById("mainBody").style.display = "flex";
+              document.querySelector("body").style.overflow = "scroll";
+
+              setTimeout(() => {
+                document.getElementById("mainBody").style.opacity = 1;
+              }, 50);
+            }, 500);
+          }, 1000);
+        }
+      };
+
+      let animationInterval = setInterval(checkPageLoad, 4000);
+
+      // Click Button Play Sound
+      const audioButton = document.getElementById("audio-button");
+      const audio = document.getElementById("audio");
+      const downB = () => {
+        audioButton.classList.add("shine-image-animation");
+
+        audio.play();
+
+        setTimeout(() => {
+          audioButton.classList.remove("shine-image-animation");
+        }, 600);
+      };
+      audioButton.addEventListener("mousedown", downB);
+      // ./Click Button Play Sound
+
+      // Hide navBar on scroll
+      let previousScroll = 0;
+
+      window.onscroll = () => {
+        let currentScrollPos = window.pageYOffset;
+
+        if (!navOpen) {
+          if (previousScroll > currentScrollPos || currentScrollPos < 50) {
+            document.getElementById("navBar").style.top = "0";
+            document.getElementById("navBar").style.boxShadow =
+              "3px -2px 20px 9px rgba(59, 130, 246, 1)";
+          } else {
+            document.getElementById("navBar").style.top = "-25vh";
+            document.getElementById("navBar").style.boxShadow =
+              "3px -2px 20px 9px rgba(59, 130, 246, 0)";
+          }
+        }
+        previousScroll = currentScrollPos;
+      };
+
+      // Mobile Nav Controls
+      let navOpen = false;
+
+      const mobileNav = document.getElementById("mobileNav");
+      const mobileHeader = document.getElementById("navBar");
+      const body = document.querySelector("body");
+      const header = document.querySelector("header");
+      const mobileNavCloseButton = document.getElementById("mobileNavClose");
+
+      const closeMobileNavOffClick = (e) => {
+        if (e.clientX < window.innerWidth / 2) {
+          closeNav();
+        }
+      };
+
+      const openNav = () => {
+        body.style.overflow = "hidden";
+
+        mobileHeader.style.boxShadow =
+          "3px -2px 20px 9px rgba(59, 130, 246, 0)";
+
+        mobileNav.style.left = "50vw";
+        mobileNav.style.boxShadow = "3px -2px 20px 9px rgba(59, 130, 246, 1)";
+
+        navOpen = true;
+
+        document.addEventListener("mousedown", closeMobileNavOffClick);
+      };
+
+      const closeNav = () => {
+        body.style.overflow = "scroll";
+
+        mobileHeader.style.boxShadow =
+          "3px -2px 20px 9px rgba(59, 130, 246, .5)";
+
+        mobileNav.style.left = "100vw";
+        mobileNav.style.boxShadow = "3px -2px 20px 9px rgba(250,0,0,0)";
+
+        navOpen = false;
+
+        document.removeEventListener("mousedown", closeMobileNavOffClick);
+      };
+
+      const mobileNavbutton = document.getElementById("mobileNavOpenButton");
+
+      mobileNavbutton.addEventListener("click", () => {
+        return navOpen ? closeNav() : openNav();
+      });
+
+      mobileNavCloseButton.addEventListener("mousedown", () => {
+        closeNav();
+      });
+      // ./Mobile Nav Controls
+
+      // If mobile replace background with static image
+      if (window.innerWidth < 700) {
+        document.getElementById("meleeBackground").remove();
+        document.getElementById("static").classList.add("defaultBackground");
+      }
+
+      // About Section Tooltip Hover
+      const tooltips = document.querySelectorAll(".tooltip span");
+
+      window.onmousemove = (e) => {
+        var x = e.clientX + 15 + "px";
+        y = e.clientY + 15 + "px";
+        for (var i = 0; i < tooltips.length; i++) {
+          tooltips[i].style.top = y;
+          tooltips[i].style.left = x;
+        }
+      };
+    </script>
+
+    <script src="./scripts/projectSection.js"></script>
+    <script src="./scripts/smoothScroll.js"></script>
+  </body>
+</html>
